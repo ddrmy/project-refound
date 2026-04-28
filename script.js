@@ -152,3 +152,12 @@ function updateTotals() {
     alert("Não foi possível atualizar os totais");
   }
 }
+
+// Evento que captura o clique nos itens da lista.
+expenseList.addEventListener("click", function (e) {
+  // Verifica se o elemento clicado é o ícone de remover.
+
+  if (e.target.classList.contains("remove-icon")) {
+    console.log(e);
+  }
+});
